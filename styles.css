@@ -1,0 +1,340 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: url('image/206045-arrangement-of-headphones-a-phone-a-laptop-a-noteb.png') no-repeat center center/cover;
+    height: 600px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+header nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+header nav a:hover {
+    color:#ffcc00;
+    text-shadow: 0 0 10px;
+}
+header .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+}
+header .content h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #ffcc00;
+}
+header .content p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #f6fe6d;
+}
+header .content .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+header .content .btn-primary {
+    background-color: #ffcc00;
+    color: white;
+    animation: bounceIN 2S ease infinite alternate;
+}
+@keyframes bounceIN{
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+header .content .btn-secondary {
+    background-color: #333;
+    color: white;
+}
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.about {
+    background-color: #f9f9f9;
+}
+.projects {
+    background-color: #fff;
+}
+.projects .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.projects .skills .skill {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.projects .skills .skill .bar {
+    height: 10px;
+    background-color: #ddd;
+    margin-top: 10px;
+    position: relative;
+}
+.projects .skills .skill .bar span {
+    display: block;
+    height: 100%;
+    position: absolute;
+}
+.projects .skills .skill .bar .design {
+    width: 90%;
+    background-color: #ffcc00;
+    animation: slideToDes 3s ease-in forwards;
+}
+@keyframes slideToDes {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%; 
+    }
+}
+.projects .skills .skill .bar .development {
+    width: 0;
+    background-color: #333;
+    animation: slideToDev 3s ease-in forwards;
+}
+
+@keyframes slideToDev {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%; 
+    }
+}
+
+.projects .skills .skill .bar .seo {
+    width: 0;
+    background-color: #6c63ff;
+    animation: slideToSeo 3s ease-in forwards;
+}
+
+@keyframes slideToSeo {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+.projects .skills .skill .bar .development {
+    width: 80%;
+    background-color: #333;
+}
+
+.testimonials {
+    background-color: #6c63ff;
+    color: white;
+    padding: 60px 20px;
+}
+.testimonials .testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.testimonials .testimonial img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+}
+.services {
+    background-color: #fff;
+}
+.services .service {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 0 1.5%;
+}
+.services .service i {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.latest-news {
+    background-color: #333;
+    color: white;
+    padding: 60px 20px;
+}
+.latest-news .news-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.latest-news .news-item img {
+    width: 100%;
+    height: auto;
+}
+.latest-news .news-item h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+.latest-news .news-item p {
+    font-size: 16px;
+}
+.team {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+.team .member {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 0 1.5%;
+}
+.team .member img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+}
+.contact {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+.contact form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+.contact form button {
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .footer-section {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    margin: 0 1.5%;
+}
+footer .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+footer .footer-section ul li {
+    margin: 5px 0;
+}
+footer .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header .content h1 {
+        font-size: 32px;
+    }
+    header .content p {
+        font-size: 16px;
+    }
+    header nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+    header .content .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .projects .skills .skill {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .services .service,
+    .latest-news .news-item,
+    .team .member {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    footer .footer-section {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    header .content h1 {
+        font-size: 24px;
+    }
+    header .content p {
+        font-size: 14px;
+    }
+    header .logo, header nav {
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .projects .skills .skill,
+    .services .service,
+    .latest-news .news-item,
+    .team .member,
+    footer .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
